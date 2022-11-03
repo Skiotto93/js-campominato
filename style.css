@@ -1,0 +1,91 @@
+/*----------------
+    RESET
+----------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/*----------------
+HEADER
+----------------*/
+header {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 60px;
+}
+.description h1 {
+    padding-left: 1.25rem;
+    font-size: 1.875rem;
+}
+.container-left, .container-right {
+    display: flex;
+    align-items: center;
+}
+.start-button {
+    padding: .3125rem .9375rem;
+}
+/*----------------
+    MAIN
+----------------*/
+main {
+    background-color: #7fffd4;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    width: 31.25rem;
+    height: 31.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+.board-cell-100 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board-cell-81 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board-cell-49 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-add {
+    background-color: lightskyblue;
+}
+.select-difficulty {
+    margin-right: 1.25rem;
+}
+.color-bomb {
+    background-color: red;
+}
+/*----------------
+    FOOTER
+----------------*/
+footer {
+    padding: 1rem;
+}
